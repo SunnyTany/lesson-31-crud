@@ -24,32 +24,6 @@
  - Код має бути чистим, добре структурованим, зі зрозумілими назвами змінних та функцій.
 */
 
-// async function getData(segment) {
-//    try {
-//       const url = 'https://jsonplaceholder.typicode.com';
-//       const response = await fetch(`${url}${segment}`,
-//          {
-//             method: 'GET',
-//             headers: {
-//                'Content-Type': 'application/json',
-//             },
-//          }
-//       );
-
-//       if( !response.ok) {
-//          console.log(`Failed to delete post with id ${id}. Status: ${response.status}`);
-//          return response.status;
-//       }
-   
-//       const data = await response.json();
-//       console.log(data);
-//       return data;
-
-//    } catch(error) {
-//       console.log('Error fetching data: ' , error)
-//       return error.message;
-//    }
-// }
 async function getData(segment) {
    try {
       const url = 'https://jsonplaceholder.typicode.com';
